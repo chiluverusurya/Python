@@ -1,0 +1,102 @@
+-------------python IDLE---------------
+Python IDLE is a python editor to write python programs
+windows search > python IDLE> OPEN > USE
+-------------VARIABLES-----------------
+
+Variables are:
+   ==> Storage locations that have a name
+   ==> name-value pairs
+==> To assign a value to a variable use equal '=' sign
+==>Ex:- fruit = 'apple'
+        fruit = "orange"
+        You can change the value of a variable 
+Variables Naming Convention
+   ==> Case sensitive. (Case Matters!)
+       Fruit and fruit are different variables
+   ==> Must Start with a letter.
+       Can contain numbers.
+   ==> Underscores allowed in variable names.
+   ==> Not allowed:
+       +
+       -
+Valid Variables Names
+   ==> first3letters = 'ABC'
+   ==> first_three_letters = 'ABC'
+   ==> firstThreeLetters = 'ABC'
+   
+ --------------STRINGS-------------------
+ Strings represent text
+ Surrounded by quotes
+ fruit = 'apple'
+ fruit = "apple"
+ Strings can be encapsulated in double or single quotes as shown above
+ When you start a string defination with double quotation mark, the next double quotation mark that python encounters is interpreted as end of the string
+ The same is true for single quotation.
+ --------Use Quotes within Strings----------
+ sentence = 'She said, "That is great tasting apple!"'
+ sentence = "That's a great tasting apple ! "
+ What if you want to use both double and single quotes with in same string?
+ double = "She said, \"That's a great tasting apple!\" "
+ single = 'She said, "That\'s a great tasting apple!" '
+ 
+ ----------STRINGS INDEXING----------------
+ Each character in a string is assigned an index
+ String: a p p l e
+ Index:  0 1 2 3 4
+ 
+ a = 'apple' [0]
+ b = 'apple' [4] 
+ fruit = 'apple'
+ first_character = fruit[0]
+ 
+ ------------FUNCTIONS----------------------
+ 
+ A function is a section of reusable code that performs an action
+ A function has a name and is called or executed, by that name
+ Optionally, functions can accept arguments and return data.
+ Python includes many built in functions, one of which is the print function
+ ---The print() Function----
+ fruit = 'apple'
+ print(fruit)
+ print('orange')
+ output:
+ apple
+ orange
+ ---The len() Function----
+ fruit = 'apple'
+ fruit_len = len(fruit)
+ print(fruit_len)
+ output:
+ 5
+ ---------NESTING FUNCTIONS---------------
+ fruit = 'apple'
+ print(len(fruit))
+ output:
+ 5
+ ---------STRING METHODS------------------
+ ==> Basic OOP <==
+ Everything in python is an object
+ Every object has a type
+ 'apple' is an object of type "str"
+ 'apple' is a string object.
+ fruit = 'apple'
+   ==> fruit is a string object
+ Objects also have functions but they are not called as functions, they are called as methods 
+ So, Methods are functions run against an object
+ To call a method on an object  
+   ==> object.method ()
+ ---The lower() String Method---
+ fruit = 'Apple'
+ print(fruit.lower())
+ print(fruit.upper())
+ output:
+ apple
+ APPLE
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
