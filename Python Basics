@@ -93,7 +93,83 @@ Valid Variables Names
  apple
  APPLE
  
- 
+------STRING CONCATENATION----------
+string concatenation only combines the strings as they are.
+Strings you see below are seperated by spaces because those spaces are included in the strings it self
+print('I ' + 'Love ' + 'Python.')
+print('I' + ' love' + ' Python.')
+Output:
+I Love Python.
+I love Python.
+If you do not include extra spaces it would look like this.
+print('I' + 'Love' + 'Python.')
+Output:
+ILovePython.
+Remember: the + sign do not do anything, it won't add any extra character it combines or add the strings together.
+---------STRING CONCATENATION USING VARIABLES-----------
+first = 'I'
+second = 'Love'
+third = 'Python'
+sentence = first + ' ' + second ' ' + third + '.'
+print(sentence)
+output:
+I Love Python.
+--------REPEATING STRINGS-----------
+* IS THE REPETITION OPERATION AND THE FORMAT IS SHOWN BELOW
+print('-' * 10) ( here the number indicates the number of times you want to repeat)
+output:
+----------
+happiness = 'happy ' * 3
+print(happiness)
+output:
+happy happy happy
+
+------The str() Function-----------
+Unlike strings numbers are not quoted in quotation marks
+To concatenate string with number first convert number to a string with built in str function.
+str() Functions converts non-strings such as numbers into strings
+In this example we create a variable name version and assign it to a number three, then we print I love python then we concatenate string representation of variable version
+finally we concatenate that with the period so we end up I love python 3
+version = 3
+print('I love Python ' + str(version) + '.' )
+output:
+I love Python 3.
+Here's what happens when number is not converted into string
+>>> print('I love Python ' + version + '.' )
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    print('I love Python ' + version + '.' )
+TypeError: can only concatenate str (not "int") to str
+
+------FORMATTING STRINGS--------
+Instead of concatenating the strings to produce the format you desire
+you can call format method on a string.
+Create place holders also known as fields by using curly braces in the string and pass the values for those fields to the format method.
+By default first curly brace field is passed with the first value passed for the format
+and the second curly brace field is passed with the second value passed for the format and so on.
+print(' I {} Python.'.format('love'))
+print(' {} {} {}'.format('I', 'love', 'Python.'))
+output:
+I love Python.
+I love Python.
+Notice that, when you pass multiple objects to a function or a method you seperate them using a comma like above example
+You can explicitly specify which possession of parameter will be used for a format field by providing the number incide the braces
+So 0 encapsulated in curly braces will be replaced by the first item passed to the format
+1 encapsulated in curly braces will be replaced by the second item passed to the format
+Ex:-
+>>> print('I {0} {1}. {1} {0}s me.'.format('love', 'Python'))
+I love Python. Python loves me.
+
+--Formatting Strings using Variables--
+first = 'I'
+second = 'Love'
+third = 'Python'
+print('{} {} {}.'.format(first, second, third))
+output:
+I Love Python.
+
+
+
  
  
  
